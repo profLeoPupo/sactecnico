@@ -480,6 +480,68 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #11014d;
 }
 
+/* Estilos do Portal */
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.portal-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #cc680033;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.portal-item:hover {
+  transform: translateY(-5px);
+  border-color: #cc6800;
+  box-shadow: 0 4px 15px rgba(204, 104, 0, 0.2);
+}
+
+.portal-item a {
+  display: block;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #faf9f9;
+}
+
+.portal-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.portal-item h4 {
+  color: #cc6800;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.portal-item p {
+  font-size: 0.9em;
+  color: #ddd;
+  margin-bottom: 1.5rem;
+}
+
+.portal-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #cc6800;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .portal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Contact Section
 --------------------------------*/
 
@@ -689,5 +751,78 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #mobile-nav-toggle {
     display: inline;
+  }
+}
+/* Estilos do Portal */
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portal-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(204, 104, 0, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  min-height: 220px;
+}
+
+.portal-item:hover {
+  transform: translateY(-5px);
+  border-color: #cc6800;
+  box-shadow: 0 4px 15px rgba(204, 104, 0, 0.2);
+}
+
+.portal-item a {
+  display: block;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #faf9f9;
+  height: 100%;
+}
+
+.portal-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.portal-item h4 {
+  color: #cc6800;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.1em;
+}
+
+.portal-item p {
+  font-size: 0.9em;
+  color: #ddd;
+  margin-bottom: 1.5rem;
+  min-height: 40px;
+}
+
+.portal-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #cc6800;
+  font-size: 0.9em;
+  border-top: 1px solid rgba(204, 104, 0, 0.2);
+  padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .portal-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .portal-item {
+    min-height: auto;
   }
 }
