@@ -173,6 +173,7 @@ h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 50%;
 }
 
 #intro .carousel-item::before {
@@ -209,6 +210,7 @@ h6 {
 
 #intro .carousel-background img {
   max-width: 100%;
+  opacity: 50%;
 }
 
 
