@@ -1,18 +1,22 @@
-/*
-  Theme Name: BizPage
-  Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/* style.css - Estilos GLOBAIS para todas as páginas */
+:root {
+  --footer-height: 50px;
+  --neon-color: rgba(0, 243, 255, 0.8);
+}
 
+/* Estrutura Básica */
 body {
   background: #fff;
   color: #666666;
   font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
 
 a {
@@ -20,11 +24,8 @@ a {
   transition: 0.5s;
 }
 
-a:hover,
-a:active,
-a:focus {
+a:hover {
   color: #18d36e;
-  outline: none;
   text-decoration: none;
 }
 
@@ -140,32 +141,19 @@ h6 {
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
-}
 
-#header #logo {
-  float: left;
-}
-
-#header #logo h1 {
-  font-size: 34px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-#header #logo h1 a,
-#header #logo h1 a:hover {
-  color: #fff;
-  padding-left: 10px;
-  border-left: 4px solid #cc6800;
 }
 
 #header #logo img {
-  padding: 0;
-  margin: 0;
+  height: 46px;
+}
+
+/* Navegação */
+.nav-menu a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -177,10 +165,13 @@ h6 {
   width: 100%;
   height: 100vh;
   background: #000;
+  
+.nav-menu > .menu-active > a {
+  color: #cc6800 !important;
 }
 
+/* Carrossel Principal */
 #intro .carousel-item {
-  width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -223,75 +214,26 @@ h6 {
   max-width: 100%;
 }
 
+
+}
+
 #intro .carousel-content {
   text-align: center;
+  padding-top: 92px;
 }
 
 #intro h2 {
   color: #fff;
   margin-bottom: 30px;
+
   font-size: 48px;
-  font-weight: 700;
-}
-
-#intro p {
-  width: 80%;
-  margin: 0 auto 30px auto;
   color: #fff;
+  margin-bottom: 60px;
 }
 
-#intro .carousel-fade {
-  overflow: hidden;
-}
-
-#intro .carousel-fade .carousel-inner .carousel-item {
-  transition-property: opacity;
-}
-
-#intro .carousel-fade .carousel-inner .carousel-item,
-#intro .carousel-fade .carousel-inner .active.carousel-item-left,
-#intro .carousel-fade .carousel-inner .active.carousel-item-right {
-  opacity: 0;
-}
-
-#intro .carousel-fade .carousel-inner .active,
-#intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
-#intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
-  opacity: 1;
-  transition: 0.5s;
-}
-
-#intro .carousel-fade .carousel-inner .carousel-item-next,
-#intro .carousel-fade .carousel-inner .carousel-item-prev,
-#intro .carousel-fade .carousel-inner .active.carousel-item-left,
-#intro .carousel-fade .carousel-inner .active.carousel-item-right {
-  left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-#intro .carousel-control-prev,
-#intro .carousel-control-next {
-  width: 10%;
-}
-
-#intro .carousel-control-next-icon,
-#intro .carousel-control-prev-icon {
-  background: none;
-  font-size: 32px;
-  line-height: 1;
-}
-
-#intro .carousel-indicators li {
-  cursor: pointer;
-}
-
-#intro .btn-get-started {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
+.btn-get-started {
+  background: #cc6800;
+  color: #fff !important;
   padding: 8px 32px;
   border-radius: 50px;
   transition: 0.5s;
@@ -1578,5 +1520,34 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #mobile-nav-toggle {
     display: inline;
+
+}
+
+/* Footer Fixo */
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: var(--footer-height);
+  background: rgba(0, 0, 0, 0.9);
+  border-top: 1px solid #cc6800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Media Queries Globais */
+@media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+  
+  #mobile-nav-toggle {
+    display: inline-block;
+  }
+  
+  #intro h2 {
+    font-size: 28px;
   }
 }
