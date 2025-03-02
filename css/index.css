@@ -1,0 +1,23 @@
+/* index.css - Estilos EXCLUSIVOS do index.html */
+#introCarousel {
+    height: calc(100vh - var(--footer-height));
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background: none;
+    font-size: 32px;
+  }
+  
+  #intro .carousel-item::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn-get-started:hover {
+    background: #fff;
+    color: #cc6800 !important;
+  }
