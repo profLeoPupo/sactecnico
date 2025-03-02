@@ -1,17 +1,22 @@
 
 /* style.css - Estilos GLOBAIS para todas as páginas */
 :root {
+  --azul-escuro: #11014d;
+  --laranja-principal: #cc6800;
+  --laranja-hover: #ff8c00;
+  --texto-claro: #f8f9fa;
   --footer-height: 50px;
   --neon-color: rgba(0, 243, 255, 0.8);
 }
 
 /* Estrutura Básica */
 body {
-  background: #fff;
-  color: #666666;
+  background: var(--azul-escuro);
+  color: var(--texto-claro);
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+  padding-bottom: var(--footer-height); /* Espaço para o footer */
 }
 
 body.no-scroll {
@@ -171,6 +176,10 @@ h6 {
 }
 
 /* Carrossel Principal */
+  /* Ajuste na altura do carrossel */
+#introCarousel {
+  height: calc(100vh - var(--footer-height) !important;
+}
 #intro .carousel-item {
   height: 100vh;
   background-size: cover;
