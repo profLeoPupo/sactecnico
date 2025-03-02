@@ -104,6 +104,12 @@
       </div>
     </div>
   </section>
+<footer class="fixed-footer">
+  <div class="copyright">
+    &copy; <script>document.write(new Date().getFullYear())</script> SAC Técnico. Todos os direitos reservados.
+  </div>
+</footer>
+
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -120,11 +126,10 @@
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
   <script src="js/main.js"></script>
-<footer class="fixed-footer">
-  <div class="copyright">
-    &copy; <span id="currentYear"></span> SAC Técnico. Todos os direitos reservados.
-  </div>
-</footer>
+
+<script>
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
