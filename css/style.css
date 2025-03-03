@@ -3,6 +3,7 @@
 :root {
   --azul-escuro: #11014d;
   --laranja-principal: var(--laranja-principal);
+
   --laranja-hover: #ff8c00;
   --texto-claro: #f8f9fa;
   --footer-height: 50px;
@@ -17,6 +18,12 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom:var(--footer-height); /* Espaço para o footer */
+  background: var(--azul-escuro);
+  color: var(--texto-claro);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: var(--footer-height); /* Espaço para o footer */
 }
 
 body.no-scroll {
@@ -176,6 +183,10 @@ h6 {
 }
 
 /* Carrossel Principal */
+  /* Ajuste na altura do carrossel */
+#introCarousel {
+  height: calc(100vh - var(--footer-height) !important;
+}
 #intro .carousel-item {
   height: 100vh;
   background-size: cover;
