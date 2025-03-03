@@ -1,5 +1,15 @@
 /* portal.css - Estilos exclusivos do portal.html */
 
+:root {
+  --azul-escuro: #11014d;
+  --laranja-principal: var(--laranja-principal);
+
+  --laranja-hover: #ff8c00;
+  --texto-claro: #f8f9fa;
+  --footer-height: 50px;
+  --neon-color: rgba(0, 243, 255, 0.8);
+}
+
 /* Seção do Portal */
 .portal-grid {
     display: grid;
