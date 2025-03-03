@@ -1,12 +1,12 @@
 
 /* style.css - Estilos GLOBAIS para todas as páginas */
 :root {
-  --azul-escuro: #11014d;
-  --laranja-principal: #ff8c00;
+  --azul-escuro: #030226;
+  --laranja-principal: #F27405;
   --laranja-hover: #ff8c00;
-  --texto-claro: #f8f9fa;
+  --texto-claro: #F2F2F2;
   --footer-height: 50px;
-  --neon-color: rgba(0, 243, 255, 0.8);
+  --neon-color: #BF5B04;
 }
 
 /* Estrutura Básica */
