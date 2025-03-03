@@ -583,47 +583,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #13a456;
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 
-
-.fixed-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: var(--footer-height);
-  background: rgba(0, 0, 0, 0.9);
-  border-top: 1px solid #cc6800;
-  box-shadow: 0 -5px 15px #cc6800;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #cc6800;
-  font-size: 0.9em;
-}
-
-#slideshow {
-  height: calc(100vh - var(--footer-height)) !important;
-}
-
-.slide {
-  height: calc(100vh - var(--footer-height)) !important;
-}
-
-
-#footer .copyright {
-  text-align: center;
-  padding-top: 30px;
-}
-
-#footer .credits {
-  text-align: center;
-  font-size: 13px;
-  color: #ddd;
-}
 
 /*--------------------------------------------------------------
 # Responsive Media Queries
