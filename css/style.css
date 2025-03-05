@@ -50,6 +50,7 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+  color: #b8b8b8;
 }
 
 /* Back to top button */
@@ -170,7 +171,7 @@ h6 {
   display: table;
   width: 100%;
   height: calc(100vh - var(--footer-height));
-  background: #000;
+
   background: var(--azul-escuro) !important; 
   overflow: hidden;
   
